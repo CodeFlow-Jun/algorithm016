@@ -22,12 +22,12 @@
         第一：在创建PriorityQueue时「指定一个Comparator类型的比较器」；<br>
         第二：添加到队列中的元素「自身实现Comparable接口」。<br>
         注意：使用无参构造方法时，优先级队列内部的比较器为null，因此在这种情况下，添加到队列中的元素需要实现Comparable接口，否则将会出现ClassCastException异常。<br>
-#### **7. 创建一个PriorityQueue对象：
+#### **7. 创建一个PriorityQueue对象：**
 ```java
     Queue<E> priorityQueue = new PriorityQueue<>(n, comparator);
     // n 为创建的 Object[] 数组大小
     // comparator 是传入的比较器Comparator对象，可以为 null
-```**
+```
 #### **8. PriorityQueue源码分析：**
 ```Java
 // 存放数据，元素存在数组中
