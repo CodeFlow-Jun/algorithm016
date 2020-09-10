@@ -1,6 +1,6 @@
 # 学习笔记
 
-## *一、Java中PriorityQueue的源码分析*
+## ***一、Java中 PriorityQueue 的源码分析***
 
 ### **总结**
 #### **1. 什么是优先队列？**
@@ -231,5 +231,77 @@ public E element() {
 }
 public E peek() {
     return (size == 0) ? null : (E) queue[0];
+}
+```
+
+## ***二、Java中 Queue 的源码分析***
+### Queue接口，FIFO
+与List、Set同一级别，都是继承了Collection接口。LinkedList实现了Deque接口。
+
+```java
+package java.util;
+public interface Queue<E> extends Collection<E> {
+    boolean add(E e); // 添加队首元素，添加成功，返回true，否则抛出异常
+    boolean offer(E e); //  添加队首元素，添加成功，返回true，否则抛出异常，终止插入，并返回false
+    E remove(); // 移除队首元素，改变队列结构，queue为空则抛出异常
+    E poll();  // 移除队首元素，改变队列结构
+    E element(); // 返回队首元素，不改变队列结构，queue为空则抛出异常
+    E peek(); // 返回队首元素，不改变队列结构
+}
+```
+
+## ***三、Java中 Stack 的源码分析***
+### Stack栈，FILO，继承于Vector，由于Vector是通过数组实现的，这就意味着，Stack也是通过数组实现的。
+### 当然，我们也可以将LinkedList当作栈来使用。
+
+```java
+package java.util;
+public class Stack<T> extends Vector<T> {
+    
+    // 版本ID，这个用于版本升级控制
+    private static final long serialVersionUID = 1224463164541339165L;
+    
+    public Stack() {}
+    
+    //push()，入栈，是通过将元素追加的数组的末尾中
+    public T push(T item) {
+        // addElement()的实现在Vector.java中
+        addElement(item);
+        return item;
+    }
+    
+    //pop()，取出栈顶元素，并将该元素从栈中删除，是取出数组末尾的元素，然后将该元素从数组中删除
+    public synchronized T pop() {
+        if (elementCount == 0)
+            throw new EmptyStackException();
+
+        modCount++;
+        T obj = elementData[--elementCount];
+        
+        elementData[elementCount] = null;
+        return obj;
+    }
+    
+    //取出栈顶元素，不执行删除，peek()，是返回数组末尾的元素
+    public synchronized T peek() {
+        if (elementCount == 0)
+            throw new EmptyStackException();
+        
+        return elementData[elementCount - 1];
+    }
+    
+    public synchronized boolean empty() {
+        return elementCount == 0;
+    }
+    
+    public synchronized int search(Object o) {
+        int i = elementCount;
+        while (--i >= 0)
+            if (equals(o, elementData[i]))
+                return elementCount - i;
+        
+        // 没有该元素，则返回 -1
+        return -1;
+    }
 }
 ```
