@@ -1,24 +1,23 @@
 # 学习笔记
 
-======
-## 一、Java中PriorityQueue的源码分析
+## *一、Java中PriorityQueue的源码分析*
 
-### 总结
-##### 1. 什么是优先队列？
+### **总结**
+##### **1. 什么是优先队列？**
    * PriorityQueue，是0个或多个元素的集合，是无界的，不允许null元素入队。<br>
    * 集合中的每个元素都有一个权重值，每次出队都弹出优先级最大或最小的元素。<br>
-##### 2. 怎样实现一个PriorityQueue？
+##### **2. 怎样实现一个PriorityQueue？**
    * 一般使用 二叉堆 来实现。<br>
    * 因为优先队列的本质是一个 最小堆，而堆则是一个满足特殊性质的数组。<br>
    * PriorityQueue最底层采用 数组 来存放数据，它有很多构造方法。<br>
    * 如果使用无参的构造方法，那么队列的最大容量将会采用默认值11，当一直向队列中添加元素时，如果达到了最大容量，那么将会进行扩容。<br>
-##### 3. PriorityQueue是线程安全的吗？
+##### **3. PriorityQueue是线程安全的吗？**
    * 不是，而PriorityBlockingQueue是线程安全的。 <br>
-##### 4. 为什么PriorityQueue中的add(e)方法没有做异常检查呢？
+##### **4. 为什么PriorityQueue中的add(e)方法没有做异常检查呢？**
    * 因为PriorityQueue是无限增长的队列，元素不够用了会扩容，所以添加元素不会失败。<br>
-##### 5. PriorityQueue是有序的吗？
+##### **5. PriorityQueue是有序的吗？**
    * PriorityQueue不是有序的，只有堆顶存储着最小的元素；<br>
-##### 6. PriorityQueue中添加的元素，一定是能比较的大小的元素，而如何比较大小呢？<br>
+##### **6. PriorityQueue中添加的元素，一定是能比较的大小的元素，而如何比较大小呢？**
    * 有两种选择:<br>
     * 第一：在创建PriorityQueue时「指定一个Comparator类型的比较器」；<br>
     * 第二：添加到队列中的元素「自身实现Comparable接口」。<br>
@@ -40,15 +39,17 @@ public PriorityQueue() {
 }
 ```
 
-#### 优先队列有两个常用的操作：向队列中添加元素、取出元素，这两个操作的方法为 add(E e)和 poll()。
+#### **优先队列有两个常用的操作：向队列中添加元素、取出元素，这两个操作的方法为 add(E e)和 poll()。**
 
-###### 添加元素
+###### **添加元素**
 ```Java
 //向优先级队列中添加元素，实际上就是向堆中插入一个元素，当插入一个元素后，为了满足堆的性质，因此可能需要堆化。
 //add(E e) 调用 offer()，无异常抛出！！
+
 public boolean add(E e) {
     return offer(e);
 }
+
 // 插入元素后，要进行上浮siftUp（）
 public boolean offer(E e) {
     // 不支持null元素
@@ -69,11 +70,12 @@ public boolean offer(E e) {
     else
         // 否则，插入元素到数组size的位置，也就是最后一个元素的下一位
         // 注意这里的size不是数组大小，而是元素个数
-        // 然后，再做自下而上的堆化
-        siftUp(i, e);
+        // 然后，再做自下而上的堆化，上浮
+        siftUp(i, e); 
     return true;
 }
 
+//上浮
 private void siftUp(int k, E x) {
     // 根据是否有比较器，使用不同的方法
     if (comparator != null)
@@ -107,19 +109,18 @@ private void siftUpComparable(int k, E x) {
 }
 ```
 
-###### 扩容
+###### **扩容**
 ```java
 // 当数组比较小（小于64）的时候每次扩容容量翻倍；
 // 当数组比较大的时候每次扩容只增加一半的容量；
+
 private void grow(int minCapacity) {
     // 旧容量
     int oldCapacity = queue.length;
     // Double size if small; else grow by 50%
     // 旧容量小于64时，容量翻倍
     // 旧容量大于等于64，容量只增加旧容量的一半
-    int newCapacity = oldCapacity + ((oldCapacity < 64) ?
-                                     (oldCapacity + 2) :
-                                     (oldCapacity >> 1));
+    int newCapacity = oldCapacity + ((oldCapacity < 64) ? (oldCapacity + 2) : (oldCapacity >> 1));
     // overflow-conscious code
     // 检查是否溢出
     if (newCapacity - MAX_ARRAY_SIZE > 0)
@@ -137,13 +138,14 @@ private static int hugeCapacity(int minCapacity) {
         MAX_ARRAY_SIZE;
 }
 ```
+#### **从优先级队列中取出元素的过程，就是删除堆顶元素的过程。<br>
+在删除完堆顶元素后，为了满足堆的性质，因此需要进行 下沉 堆化。**
 
-###### 取出元素
+###### **取出元素**
 ```Java
-// 从优先级队列中取出元素的过程，就是删除堆顶元素的过程。在删除完堆顶元素后，为了满足堆的性质，因此需要进行堆化。
-// 比较简单的做法就是，将数组中最后的一个元素搬到堆顶，然后再从上到下来进行堆化。
+// 比较简单的做法就是，将数组中最后的一个元素搬到堆顶，然后再从上到下来进行siftDown()。
 // remove()调用的poll()，只是没有元素的时候会抛出异常。
-// 队首元素出队，队尾元素来到队首，开始进行下沉siftDown()
+
 public E remove() {
     // 调用poll弹出队首元素
     E x = poll();
@@ -215,7 +217,8 @@ private void siftDownComparable(int k, E x) {
     queue[k] = key;
 }
 ```
-###### 查看队首元素
+
+###### **查看队首元素**
 ```java
 // 查看队首元素，element()调用的peek()，只是没取到元素时抛出异常。
 // 队首元素下标为0
