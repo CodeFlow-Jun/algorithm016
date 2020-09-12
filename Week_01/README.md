@@ -69,8 +69,8 @@
 [94](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/ "二叉树的中序遍历") | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/ "二叉树的中序遍历") | 中等 | 栈、树、哈希表 | 2
 [剑指Offer 40](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/ "最小的k个数") | [最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/ "最小的k个数") | 简单 | 堆、分治算法 | 1 
 
-3. **用 add first 或 add last 这套新的 API 改写 Deque 的代码**
-4. **分析 Queue 和 Priority Queue 的源码**
+3. **[用 add first 或 add last 这套新的 API 改写 Deque 的代码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/DemoStackQueueDeque.java "用 add first 或 add last 这套新的 API 改写 Deque 的代码")**
+4. **[分析 Queue 和 Priority Queue 的源码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/%E5%88%86%E6%9E%90%20Queue%20%E5%92%8C%20Priority%20Queue%20%E7%9A%84%E6%BA%90%E7%A0%81.md "分析 Queue 和 Priority Queue 的源码")**
 
 
 
