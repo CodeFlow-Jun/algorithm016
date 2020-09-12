@@ -1,13 +1,17 @@
 # 学习笔记
 
 ----------------------------
-## 目录
-**一、五毒神掌** <br>
-**二、Array 实战题目** <br>
-**三、Linked List 实战题目** <br>
-**四、Stack、Queue、PriorityQueue、Deque 实战题目** <br>
-**五、本周作业** <br>
-
+>## 目录
+**[一、五毒神掌](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%B8%80%E4%BA%94%E6%AF%92%E7%A5%9E%E6%8E%8C "一、五毒神掌")** <br>
+**[二、Array 实战题目](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%BA%8Carray-%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE "二、Array 实战题目")** <br>
+**[三、Linked List 实战题目](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%B8%89linked-list-%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE "三、Linked List 实战题目")** <br>
+**[四、Stack、Queue、PriorityQueue、Deque 实战题目](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E5%9B%9Bstackqueuepriorityqueuedeque-%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE "四、Stack、Queue、PriorityQueue、Deque 实战题目")** <br>
+**[五、本周作业](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%BA%94%E6%9C%AC%E5%91%A8%E4%BD%9C%E4%B8%9A "五、本周作业")** <br>
+>>1. **实战题目** <br>
+>>2. **预习题目** <br>
+>>3. **用 add first 或 add last 这套新的 API 改写 Deque 的代码** <br>
+>>4. **分析 Queue 和 Priority Queue 的源码** <br>
+	
 --------------
 
 ### **一、五毒神掌**
