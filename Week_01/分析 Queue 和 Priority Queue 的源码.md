@@ -1,9 +1,10 @@
 # 分析 Stack、Queue 和 PriorityQueue 的源码
 >## 目录
-**[一、五毒神掌](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%B8%80%E4%BA%94%E6%AF%92%E7%A5%9E%E6%8E%8C "一、五毒神掌")** <br>
-**[二、Array 实战题目](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%BA%8Carray-%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE "二、Array 实战题目")** <br>
-**[三、Linked List 实战题目](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%B8%89linked-list-%E5%AE%9E%E6%88%98%E9%A2%98%E7%9B%AE "三、Linked List 实战题目")** <br>
+>**[一、Java中 PriorityQueue 的源码分析](#https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/%E5%88%86%E6%9E%90%20Queue%20%E5%92%8C%20Priority%20Queue%20%E7%9A%84%E6%BA%90%E7%A0%81.md#%E4%B8%80java%E4%B8%AD-priorityqueue-%E7%9A%84%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90)** <br>
+>**[二、Java中 Queue 的源码分析](#https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/%E5%88%86%E6%9E%90%20Queue%20%E5%92%8C%20Priority%20Queue%20%E7%9A%84%E6%BA%90%E7%A0%81.md#%E4%BA%8Cjava%E4%B8%AD-queue-%E7%9A%84%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90)** <br>
+>**[三、Java中 Stack 的源码分析](#https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/%E5%88%86%E6%9E%90%20Queue%20%E5%92%8C%20Priority%20Queue%20%E7%9A%84%E6%BA%90%E7%A0%81.md#%E4%B8%89java%E4%B8%AD-stack-%E7%9A%84%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90)** <br>
 
+------------------------------------
 ## ***一、Java中 PriorityQueue 的源码分析***
 
 ### **总结**
@@ -56,8 +57,8 @@ public PriorityQueue() {
 }
 ```
 
-#### **优先队列有两个常用的操作：向队列中添加元素、取出元素，这两个操作的方法为 add(E e)和 poll()。**
-#### **添加元素**
+##### **优先队列有两个常用的操作：向队列中添加元素、取出元素，这两个操作的方法为 add(E e)和 poll()。**
+##### **添加元素**
 ```Java
 //向优先级队列中添加元素，实际上就是向堆中插入一个元素，当插入一个元素后，为了满足堆的性质，因此可能需要堆化。
 //add(E e) 调用 offer()，无异常抛出！！
@@ -125,7 +126,7 @@ private void siftUpComparable(int k, E x) {
 }
 ```
 
-#### **扩容**
+##### **扩容**
 ```java
 // 当数组比较小（小于64）的时候每次扩容容量翻倍；
 // 当数组比较大的时候每次扩容只增加一半的容量；
@@ -154,10 +155,10 @@ private static int hugeCapacity(int minCapacity) {
         MAX_ARRAY_SIZE;
 }
 ```
-#### **从优先级队列中取出元素的过程，就是删除堆顶元素的过程。**
-#### **在删除完堆顶元素后，为了满足堆的性质，因此需要进行 下沉 堆化。**
+##### **从优先级队列中取出元素的过程，就是删除堆顶元素的过程。**
+##### **在删除完堆顶元素后，为了满足堆的性质，因此需要进行 下沉 堆化。**
 
-#### **取出元素**
+##### **取出元素**
 ```Java
 // 比较简单的做法就是，将数组中最后的一个元素搬到堆顶，然后再从上到下来进行siftDown()。
 // remove()调用的poll()，只是没有元素的时候会抛出异常。
@@ -234,7 +235,7 @@ private void siftDownComparable(int k, E x) {
 }
 ```
 
-#### **查看队首元素**
+##### **查看队首元素**
 ```java
 // 查看队首元素，element()调用的peek()，只是没取到元素时抛出异常。
 // 队首元素下标为0
@@ -251,14 +252,14 @@ public E peek() {
 ```
 
 ## ***二、Java中 Queue 的源码分析***
-#### Queue接口，FIFO，由LinkedList类实现
-#### 创建一个Queue对象：
+#### 1. Queue接口，FIFO，由LinkedList类实现
+#### 2. 创建一个Queue对象：
 ```java
     Queue<E> q=new LinkedList<>();
 ```
-#### Queue与List、Set同一级别，都是继承了Collection接口。
-#### LinkedList实现了Deque接口。
-#### **Queue源码分析：**
+#### 3. Queue与List、Set同一级别，都是继承了Collection接口。
+#### 4. LinkedList实现了Deque接口。
+#### 5. Queue源码分析：
 ```java
 package java.util;
 public interface Queue<E> extends Collection<E> {
@@ -272,14 +273,14 @@ public interface Queue<E> extends Collection<E> {
 ```
 
 ## ***三、Java中 Stack 的源码分析***
-#### Stack栈，FILO，继承于Vector
-#### 由于Vector是通过数组实现的，这就意味着，Stack也是通过数组实现的，并具备Vector所有性质。
-#### 创建一个Stack对象：
+#### 1. Stack栈，FILO，继承于Vector
+#### 2. 由于Vector是通过数组实现的，这就意味着，Stack也是通过数组实现的，并具备Vector所有性质。
+#### 3. 创建一个Stack对象：
 ```java
     Stack<E> stack = new Stack<>();
 ```
-#### 当然，我们也可以将LinkedList当作栈来使用。
-#### **Stack源码分析：**
+#### 4. 我们也可以将 LinkedList 当作栈来使用。
+#### 5. Stack源码分析：
 ```java
 package java.util;
 public class Stack<T> extends Vector<T> {
