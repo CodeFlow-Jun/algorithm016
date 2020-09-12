@@ -1,4 +1,4 @@
-#分析 Queue 和 PriorityQueue 的源码
+# 分析 Stack、Queue 和 PriorityQueue 的源码
 
 ## ***一、Java中 PriorityQueue 的源码分析***
 
