@@ -9,8 +9,8 @@
 >**[五、本周作业](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/README.md#%E4%BA%94%E6%9C%AC%E5%91%A8%E4%BD%9C%E4%B8%9A "五、本周作业")** <br>
 >>1. **实战题目** <br>
 >>2. **预习题目** <br>
->>3. **用 add first 或 add last 这套新的 API 改写 Deque 的代码** <br>
->>4. **分析 Queue 和 Priority Queue 的源码** <br>
+>>3. **[用 add first 或 add last 这套新的 API 改写 Deque 的代码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/DemoStackQueueDeque.java "用 add first 或 add last 这套新的 API 改写 Deque 的代码")** <br>
+>>4. **[分析 Queue 和 Priority Queue 的源码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/%E5%88%86%E6%9E%90%20Queue%20%E5%92%8C%20Priority%20Queue%20%E7%9A%84%E6%BA%90%E7%A0%81.md "分析 Queue 和 Priority Queue 的源码") <br>
 	
 --------------
 
