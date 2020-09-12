@@ -65,8 +65,8 @@
 
  题号   |   名称  |  难度  |   分类  |   题解    
  ----- | ------ | ------ | ------- | --------- 
-[<center>242</center>](https://leetcode-cn.com/problems/valid-anagram/description/ "有效的字母异位词") | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/description/ "有效的字母异位词") | 简单 | 排序、哈希表 | 1
-[<center>94</center>](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/ "二叉树的中序遍历") | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/ "二叉树的中序遍历") | 中等 | 栈、树、哈希表 | 2
+[242](https://leetcode-cn.com/problems/valid-anagram/description/ "有效的字母异位词") | [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/description/ "有效的字母异位词") | 简单 | 排序、哈希表 | 1
+[94](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/ "二叉树的中序遍历") | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/ "二叉树的中序遍历") | 中等 | 栈、树、哈希表 | 2
 [剑指Offer 40](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/ "最小的k个数") | [最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/ "最小的k个数") | 简单 | 堆、分治算法 | 1 
 
 3. **[用 add first 或 add last 这套新的 API 改写 Deque 的代码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/DemoStackQueueDeque.java "用 add first 或 add last 这套新的 API 改写 Deque 的代码")**
