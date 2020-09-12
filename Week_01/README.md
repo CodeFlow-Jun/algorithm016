@@ -53,7 +53,7 @@
 
   题号   |   名称  |  难度  |   分类  |   题解    
  ----- | ------ | ------ | ------- | --------- 
- [26](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | [有效的括号](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | 简单 | 数组、双指针 | 1 
+ [26](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | [删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | 简单 | 数组、双指针 | 1 
  [189](https://leetcode-cn.com/problems/rotate-array/ "旋转数组") | [旋转数组](https://leetcode-cn.com/problems/rotate-array/ "旋转数组") | 简单 | 数组 | 1 
  [21](https://leetcode-cn.com/problems/merge-two-sorted-lists/ "合并两个有序链表") | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/ "合并两个有序链表") | 简单 | 链表 | 1 
  [88](https://leetcode-cn.com/problems/merge-sorted-array/ "合并两个有序数组") | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/ "合并两个有序数组") | 简单 | 数组、双指针 | 1 
