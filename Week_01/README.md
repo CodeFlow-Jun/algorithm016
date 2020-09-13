@@ -53,13 +53,15 @@
 
   题号   |   名称  |  难度  |   分类  |   题解    
  ----- | ------ | ------ | ------- | --------- 
- [26](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | [删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | 简单 | 数组、双指针 | 1 
- [189](https://leetcode-cn.com/problems/rotate-array/ "旋转数组") | [旋转数组](https://leetcode-cn.com/problems/rotate-array/ "旋转数组") | 简单 | 数组 | 1 
- [21](https://leetcode-cn.com/problems/merge-two-sorted-lists/ "合并两个有序链表") | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/ "合并两个有序链表") | 简单 | 链表 | 1 
- [88](https://leetcode-cn.com/problems/merge-sorted-array/ "合并两个有序数组") | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/ "合并两个有序数组") | 简单 | 数组、双指针 | 1 
- [66](https://leetcode-cn.com/problems/plus-one/ "加一") | [加一](https://leetcode-cn.com/problems/plus-one/ "加一") | 简单 | 数组 | 1 |
- [641](https://leetcode-cn.com/problems/design-circular-deque/ "设计循环双端队列") | [设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/ "设计循环双端队列") | 中等 | 设计、队列 | 1 
- [42](https://leetcode-cn.com/problems/trapping-rain-water/ "接雨水") | [接雨水](https://leetcode-cn.com/problems/trapping-rain-water/ "接雨水") | 困难 | 栈、数组、双指针 | 2 
+ [26](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | [删除排序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/ "删除排序数组中的重复项") | 简单 | 数组、双指针 | 前后双指针 
+ [189](https://leetcode-cn.com/problems/rotate-array/ "旋转数组") | [旋转数组](https://leetcode-cn.com/problems/rotate-array/ "旋转数组") | 简单 | 数组 | 暴力、逐步反转
+ [21](https://leetcode-cn.com/problems/merge-two-sorted-lists/ "合并两个有序链表") | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/ "合并两个有序链表") | 简单 | 链表 | 递归 
+ [88](https://leetcode-cn.com/problems/merge-sorted-array/ "合并两个有序数组") | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/ "合并两个有序数组") | 简单 | 数组、双指针 | 倒退双指针 
+ [66](https://leetcode-cn.com/problems/plus-one/ "加一") | [加一](https://leetcode-cn.com/problems/plus-one/ "加一") | 简单 | 数组 | 1 
+ [1](https://leetcode-cn.com/problems/two-sum/ "两数之和") | [两数之和](https://leetcode-cn.com/problems/two-sum/ "两数之和") | 简单 | 数组、哈希表| 暴力、双指针夹逼、(哈希) 
+ [283](https://leetcode-cn.com/problems/move-zeroes/ "移动零") | [移动零](https://leetcode-cn.com/problems/move-zeroes/ "移动零") | 简单 | 数组、双指针 | 双指针 
+ [641](https://leetcode-cn.com/problems/design-circular-deque/ "设计循环双端队列") | [设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/ "设计循环双端队列") | 中等 | 设计、队列 | - 
+ [42](https://leetcode-cn.com/problems/trapping-rain-water/ "接雨水") | [接雨水](https://leetcode-cn.com/problems/trapping-rain-water/ "接雨水") | 困难 | 栈、数组、双指针 | 双指针夹逼
 
 2. **预习题目**
 
