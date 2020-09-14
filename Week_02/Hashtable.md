@@ -22,18 +22,18 @@
 * 大整数：模一个素数，哈希冲突会更小；
 * 浮点型：把浮点型所占用的32或64位的存储空间转成整型来处理，之后通过大整数取模的方式进行；
 * 字符串：所占空间是不固定的，但仍可以转化为整型来处理。<br>
-166 = 1*10^2 + 6*10^1 + 6*10^0 ；<br>
-code = c*26^3 + 0*26^2 + d*26^1 + e*26^0 ；<br>
-code = c*B^3 + o*B^2 + d*B^1 + e*B^0 ；<br>
+166 = 1 * 10 ^ 2 + 6 * 10 ^ 1 + 6 * 10 ^ 0 ；<br>
+code = c * 26 ^ 3 + o * 26 ^ 2 + d * 26 ^ 1 + e * 26 ^ 0 ；<br>
+code = c * B ^ 3 + o * B ^ 2 + d * B ^ 1 + e * B ^ 0 ；<br>
 最后，可转化为<br>
-hash(code) = (c*B^3 + o*B^2 + d*B^1 + e*B^0) % M ;<br>
+hash(code) = (c * B ^ 3 + o * B ^ 2 + d * B ^ 1 + e * B ^ 0) % M ;<br>
 hash(code) = ((((c * B) + o) * B + d) * B + e) % M ;<br>
 hash(code) = ((((c % M) * B + o) % M * B + d) % M * B + e) % M ;<br>
 
 ```java
-	int hash = 0
-	for(int i = 0;i < s.length(); i++)
-    	hash = (hash * B + s.charAt(i)) % M
+int hash = 0
+for(int i = 0;i < s.length(); i++)
+    hash = (hash * B + s.charAt(i)) % M
 ```
 * 对于基本的数据类型不需要我们自己去设计哈希函数，我们只需要直接调用Java中的hashCode()函数即可；<br>
 * Java中的hashCode函数，返回的是一个带符号的整型，可正可负；<br>
@@ -146,7 +146,7 @@ public static void main(String[] args) {
 * M 是一个素数，根据不同的数据规模，选择不同的 M 值。
 * 对于每一个元素k，我们需要求 hashCode(k) %M，将该元素真正的转化为哈希表中对应的索引值，之后在哈希表中对应的索引位置上存储该元素即可。
 * 注意：hashCode(k)的值可能为负值，我们通常这样抹去负号：
-* hashCode(k) & 0x7fffffff) % M
+* (hashCode(k) & 0x7fffffff) % M
 * 当发生哈希冲突时，数组中的M个空间各自会存放一个链表，我们可以直接将发生哈希冲突的元素挂接在相应索引位置的链表上。
 
 * ***HashMap 就是一个 TreeMap 数组***；
@@ -161,8 +161,9 @@ public static void main(String[] args) {
 
 ---------
 ### Hashtable 源码解析
-Hashtable 继承于Dictionary，实现了Map、Cloneable、java.io.Serializable接口。
-Hashtable 的函数都是同步的，这意味着它是线程安全的。它的key、value都不可以为null。此外，Hashtable中的映射不是有序的。
+* Hashtable 继承于Dictionary，实现了Map、Cloneable、java.io.Serializable接口。
+* Hashtable 的函数都是同步的，这意味着它是线程安全的。它的key、value都不可以为null。
+* 此外，Hashtable中的映射不是有序的。
 
 ```java
 ackage java.util;
