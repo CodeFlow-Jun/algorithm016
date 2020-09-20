@@ -5,9 +5,6 @@
 ### **一、总结**
 1. HashMap 总结
 2. 堆 学习
-3.  小时之后，再重复做题
-4. 一周后重复做题
-5. 面试前一周恢复性训练
 
 ### **二、哈希表、映射、集合 实战题目**
  题号   |   名称  |  难度  |   分类  |   题解    
@@ -59,9 +56,6 @@
 [50](https://leetcode-cn.com/problems/powx-n/ "Pow(x, n)") | [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/ "Pow(x, n)") | 中等 | 数学、二分查找 | - 
 [78](https://leetcode-cn.com/problems/subsets/ "子集") | [子集](https://leetcode-cn.com/problems/subsets/ "子集") | 中等 | 位运算、数组、回溯算法 | -
 [51](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | [N 皇后](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | 困难 | 回溯算法 | -
-
-3. **[用 add first 或 add last 这套新的 API 改写 Deque 的代码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/DemoStackQueueDeque.java "用 add first 或 add last 这套新的 API 改写 Deque 的代码")**
-4. **[分析 Queue 和 Priority Queue 的源码](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_01/%E5%88%86%E6%9E%90%20Queue%20%E5%92%8C%20Priority%20Queue%20%E7%9A%84%E6%BA%90%E7%A0%81.md "分析 Queue 和 Priority Queue 的源码")**
 
 
 
