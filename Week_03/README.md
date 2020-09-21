@@ -21,7 +21,16 @@
   }
 ```
 * **递归-实战题目**
- 题号   |   名称  |  难度  |   分类  |   题解   |  收到
- ----- | ------ | ------ | ------- | ------- |---------
- [70](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | 简单 | 动态规划 | [尾递归、动态规划](https://ocykj2i631.feishu.cn/docs/doccnBX1W9TnHKx1RXREM0gdtrd#/ "爬楼梯") | 
- [22](https://leetcode-cn.com/problems/generate-parentheses/ "括号生成") | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/ "括号生成") | 中等 | 字符串、回溯算法 | [递归](https://ocykj2i631.feishu.cn/docs/doccnvxk0zmIoMiIha2cNXiCmHd#/ "括号生成") | 
+ 题号   |   名称  |  难度  |   分类  |   题解  
+------ | ------ | ------ | ------- | ------- 
+ [70](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | 简单 | 动态规划 | [尾递归、动态规划](https://ocykj2i631.feishu.cn/docs/doccnBX1W9TnHKx1RXREM0gdtrd#/ "爬楼梯") 
+ [22](https://leetcode-cn.com/problems/generate-parentheses/ "括号生成") | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/ "括号生成") | 中等 | 字符串、回溯算法 | [递归](https://ocykj2i631.feishu.cn/docs/doccnvxk0zmIoMiIha2cNXiCmHd#/ "括号生成") 
+ 
+  题号   |   名称  |  难度  |   分类  |   题解    
+ ----- | ------ | ------ | ------- | --------- 
+ [1](https://leetcode-cn.com/problems/two-sum/ "两数之和") | [两数之和](https://leetcode-cn.com/problems/two-sum/ "两数之和") | 简单 | 数组、哈希表| 暴力、双指针夹逼、哈希表 
+ [11](https://leetcode-cn.com/problems/container-with-most-water/ "盛最多水的容器") | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/ "盛最多水的容器") | 中等 | 数组、双指针 | 暴力、 双指针夹逼
+ [283](https://leetcode-cn.com/problems/move-zeroes/ "移动零") | [移动零](https://leetcode-cn.com/problems/move-zeroes/ "移动零") | 简单 | 数组、双指针 | 双指针 
+ [70](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | 简单 | 动态规划 | 尾递归、动态规划
+ [15](https://leetcode-cn.com/problems/3sum/ "三数之和") | [三数之和](https://leetcode-cn.com/problems/3sum/ "三数之和") | 中等 | 数组、双指针 | 暴力、双指针夹逼 
+
