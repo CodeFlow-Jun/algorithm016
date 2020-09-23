@@ -27,4 +27,4 @@
  [70](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/ "爬楼梯") | 简单 | 动态规划 | [尾递归、动态规划](https://ocykj2i631.feishu.cn/docs/doccnBX1W9TnHKx1RXREM0gdtrd#/ "爬楼梯") 
  [22](https://leetcode-cn.com/problems/generate-parentheses/ "括号生成") | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/ "括号生成") | 中等 | 字符串、回溯算法 | [递归](https://ocykj2i631.feishu.cn/docs/doccnvxk0zmIoMiIha2cNXiCmHd#/ "括号生成") 
  [98](https://leetcode-cn.com/problems/validate-binary-search-tree/ "验证二叉搜索树") | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/ "验证二叉搜索树") | 中等 | 树、深度优先搜索 | [递归](https://ocykj2i631.feishu.cn/docs/doccnQJvf8ZnXUyUN0uZPfU2Wfe# "验证二叉搜索树") 
-
+ [226](https://leetcode-cn.com/problems/invert-binary-tree/ "翻转二叉树") | [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/ "翻转二叉树") | 简单 | 树 | [递归](https://ocykj2i631.feishu.cn/docs/doccn0GQs5OBgXmSXK9wkq9eDil#/ "翻转二叉树") 
