@@ -91,9 +91,13 @@
           result.add(路径)
           return
       for 选择 in 选择列表:
-          做选择
+          # 做选择
+          将该选择从选择列表移除 
+          路径.add(选择)
           backtrack(路径, 选择列表)
-          撤销选择
+          # 撤销选择 
+          路径.remove(选择) 
+          将该选择再加⼊选择列表
   # 核心就是 for循环里面的 递归，在递归调用之前 “做选择”
   # 在递归调用之后 “撤销选择”。
 ```
@@ -114,4 +118,45 @@
     2. [1,3] 就是「选择列表」，表⽰我们当前可以做出的选择；
     3. 「结束条件」就是遍历到树的底层，在这⾥就是选择列表为空的时候。
 * 我们可以把「路径」和「选择列表」作为决策树上每个 节点的属性：
-* 例如：根节点的的
+* 例如：根节点的的选择列表为[1, 2, 3]，路径为[];而子节点的选择列表为[]，路径为[2, 1, 3]等。
+* 我们定义的 backtrack 函数其实就像⼀个指针，在这棵树上游⾛，同时要正确维护每个节点的属性，每当⾛到树的底层，其「路径」就是⼀个全排列。
+* **写 backtrack 函数时，需要维护⾛过的「路径」和当前可以做的「选择列表」，当触发「结束条件」时，将「路径」记⼊结果集**。
+* 全排列代码：
+```java 
+  List<List<Integer>> res = new LinkedList<>(); 
+  
+  /* 主函数，输⼊⼀组不重复的数字，返回它们的全排列 */ 
+  List<List<Integer>> permute(int[] nums) { 
+      // 记录「路径」 
+      LinkedList<Integer> track = new LinkedList<>(); 
+      backtrack(nums, track); 
+      return res; 
+  }
+  
+  // 路径：记录在 track 中 
+  // 选择列表：nums 中不存在于 track 的那些元素 
+  // 结束条件：nums 中的元素全都在 track 中出现 
+  void backtrack(int[] nums, LinkedList<Integer> track) { 
+      // 触发结束条件 
+      if (track.size() == nums.length) { 
+          res.add(new LinkedList(track)); 
+          return; 
+      }
+      for (int i = 0; i < nums.length; i++) { 
+          // 排除不合法的选择 
+          if (track.contains(nums[i])) 
+              continue; 
+          // 做选择 
+          track.add(nums[i]); 
+          // 进⼊下⼀层决策树 
+          backtrack(nums, track); 
+          // 取消选择 
+          track.removeLast(); 
+      } 
+  }
+  // 这⾥稍微做了些变通，没有显式记录「选择列表」，⽽是通过 nums 和 track 推导出当前的选择列表
+```
+* 这个算法解决全排列不是很⾼效，应为对链表使⽤ contains ⽅法需要 O(N) 的时间复杂度。
+* 有更好的⽅法通过交换元素达到⽬的。
+* 回溯算法再怎么优化，时间复杂度也不会低于O(N!)
+* 不像动态规划存在重叠⼦问题可以优化，回溯算法就是纯暴⼒穷举，复杂度⼀般都很⾼。
