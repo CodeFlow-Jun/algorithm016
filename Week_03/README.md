@@ -100,4 +100,4 @@
 
 * 全排列问题：n 个不重复的数，全排列共有 n! 个。
 * 比方说，给三个数[1, 2, 3]，我们可以一一穷举：
-![image]()
+![决策树01](https://github.com/CodeFlow-Jun/algorithm016/blob/master/Week_03/%E5%86%B3%E7%AD%96%E6%A0%9101.png)
