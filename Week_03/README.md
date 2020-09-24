@@ -75,13 +75,14 @@
  [111](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/ "二叉树的最小深度") | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/ "二叉树的最小深度") | 简单 | 树、BFS、DFS | [BFS、递归](https://ocykj2i631.feishu.cn/docs/doccnwvXDrQy9rmGwYVLyPcYAvh#/ "二叉树的最小深度") 
  [104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/ "二叉树的最大深度") | [二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/ "二叉树的最大深度") | 简单 | 树、DFS | [DFS](https://ocykj2i631.feishu.cn/docs/doccnckZcjeGXYnaklqmOK7NPJb#/ "二叉树的最大深度") 
 
+## ***二、回溯***
 * **DFS算法**其实就是**回溯算法**；
 * **解决一个回溯问题，其实就是一个决策树的遍历过程**；
 * 只需要思考**三个问题：**
     1.路径：也就是**已经做出的选择**；
     2.选择列表：也就是**你当前可以做的选择**；
     3.结束条件：也就是**到达决策树底层，无法再做选择的条件**。
-* **经典问题**：全排列、N皇后问题；
+* **经典问题**：全排列、51.N皇后问题；
 * **回溯算法 代码模版：**
 
 ```java
@@ -160,3 +161,8 @@
 * 有更好的⽅法通过交换元素达到⽬的。
 * 回溯算法再怎么优化，时间复杂度也不会低于O(N!)
 * 不像动态规划存在重叠⼦问题可以优化，回溯算法就是纯暴⼒穷举，复杂度⼀般都很⾼。
+* **回溯-实战题目**
+
+ 题号   |   名称  |  难度  |   分类  |   题解  
+------ | ------ | ------ | ------- | ------- 
+ [51](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | [N 皇后](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | 困难 | 回溯 | [回溯](https://ocykj2i631.feishu.cn/docs/doccn4ikGOCGzBlBCF9pLTz0ZvP/ "N 皇后") 
