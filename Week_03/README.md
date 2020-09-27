@@ -161,8 +161,33 @@
 * 有更好的⽅法通过交换元素达到⽬的。
 * 回溯算法再怎么优化，时间复杂度也不会低于O(N!)
 * 不像动态规划存在重叠⼦问题可以优化，回溯算法就是纯暴⼒穷举，复杂度⼀般都很⾼。
+* 树形问题：17. 电话号码的字母组合
 * **回溯-实战题目**
 
  题号   |   名称  |  难度  |   分类  |   题解  
 ------ | ------ | ------ | ------- | ------- 
  [51](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | [N 皇后](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | 困难 | 回溯 | [回溯](https://ocykj2i631.feishu.cn/docs/doccn4ikGOCGzBlBCF9pLTz0ZvP/ "N 皇后") 
+ 
+## ***三、分治 Divide&Conquer***
+* **分治代码模板：**
+
+```java
+private static int divide_conquer(Problem problem, ) {
+    // recursion terminator
+    if (problem == NULL) {
+        int res = process_last_result();
+        return res;     
+    }
+    // prepare data
+    subProblems = split_problem(problem)
+    
+    // conquer subproblems
+    res0 = divide_conquer(subProblems[0])
+    res1 = divide_conquer(subProblems[1])
+    
+    // process and generate the final result 
+    result = process_result(res0, res1);
+
+    return result;
+}
+```
