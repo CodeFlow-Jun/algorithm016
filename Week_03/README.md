@@ -166,9 +166,24 @@
 
  题号   |   名称  |  难度  |   分类  |   题解  
 ------ | ------ | ------ | ------- | ------- 
- [51](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | [N 皇后](https://leetcode-cn.com/problems/n-queens/ "N 皇后") | 困难 | 回溯 | [回溯](https://ocykj2i631.feishu.cn/docs/doccn4ikGOCGzBlBCF9pLTz0ZvP/ "N 皇后") 
- [17](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/ "电话号码的字母组合") | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/ "电话号码的字母组合") | 中等 | 字符串、回溯 | [回溯、队列](https://ocykj2i631.feishu.cn/docs/doccnbB6WmbEoYxbRORbw0GI7Fd#/ "电话号码的字母组合") 
- 
+[17](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/ "电话号码的字母组合") | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/ "电话号码的字母组合") | 中等 | 字符串、回溯 | [回溯-树形问题](https://ocykj2i631.feishu.cn/docs/doccnbB6WmbEoYxbRORbw0GI7Fd#/ "电话号码的字母组合") 
+[93](https://leetcode-cn.com/problems/restore-ip-addresses/ "复原IP地址") | [复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses/ "复原IP地址") | 中等 | 字符串、回溯 | 回溯-树形问题
+[131](https://leetcode-cn.com/problems/palindrome-partitioning/ "分割回文串") | [分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/ "分割回文串") | 中等 | 回溯 | 回溯-树形问题
+[46](https://leetcode-cn.com/problems/permutations/ "全排列") | [全排列](https://leetcode-cn.com/problems/permutations/ "全排列") | 中等 | 回溯 | [回溯-排列](https://ocykj2i631.feishu.cn/docs/doccnNW5yuIxQAlVMbqgMeebwwg/ "全排列")
+[47](https://leetcode-cn.com/problems/permutations-ii/ "全排列 II") | [全排列 II](https://leetcode-cn.com/problems/permutations-ii/ "全排列 II") | 中等 | 回溯 | 回溯-排列
+[77](https://leetcode-cn.com/problems/combinations/ "组合") | [组合](https://leetcode-cn.com/problems/combinations/ "组合") | 中等 | 回溯 | [回溯-组合](https://ocykj2i631.feishu.cn/docs/doccn2BvEJ1v2RwrNPtizyEdVig/ "组合")
+[39](https://leetcode-cn.com/problems/combination-sum/ "组合总和") | [组合总和](https://leetcode-cn.com/problems/combination-sum/ "组合总和") | 中等 | 数组、回溯 | 回溯-组合
+[40](https://leetcode-cn.com/problems/combination-sum-ii/ "组合总和 II") | [组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/ "组合总和 II") | 中等 | 数组、回溯 | 回溯-组合
+[216](https://leetcode-cn.com/problems/combination-sum-iii/ "组合总和 III") | [组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/ "组合总和 III") | 中等 | 数组、回溯 | 回溯-组合
+[78](https://leetcode-cn.com/problems/subsets/ "子集") | [子集](https://leetcode-cn.com/problems/subsets/ "子集") | 中等 | 位运算、数组、回溯 | 回溯-组合
+[90](https://leetcode-cn.com/problems/subsets-ii/ "子集 II") | [子集 II](https://leetcode-cn.com/problems/subsets-ii/ "子集 II") | 中等 | 数组、回溯 | 回溯-组合
+[401](https://leetcode-cn.com/problems/binary-watch/ "二进制手表") | [二进制手表](https://leetcode-cn.com/problems/binary-watch/ "二进制手表") | 中等 | 位运算、回溯 | 回溯-组合
+[79](https://leetcode-cn.com/problems/word-search/ "单词搜索") | [单词搜索](https://leetcode-cn.com/problems/word-search/ "单词搜索") | 中等 | 二维回溯 | [二维回溯](https://ocykj2i631.feishu.cn/docs/doccnlWON7w39PQgezCLYRUBkrc#/ "单词搜索")
+[200](https://leetcode-cn.com/problems/number-of-islands/ "岛屿数量") | [岛屿数量](https://leetcode-cn.com/problems/number-of-islands/ "岛屿数量") | 中等 | 二维回溯、DFS、BFS、并查集 | [无撤回回溯-floodfill算法](https://ocykj2i631.feishu.cn/docs/doccn7zQy2cd20sDphiCpod9oLg#/ "岛屿数量")
+[130](https://leetcode-cn.com/problems/surrounded-regions/ "被围绕的区域") | [被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/ "被围绕的区域") | 中等 | 二维回溯、DFS、BFS、并查集 | 无撤回回溯-floodfill算法
+[51](https://leetcode-cn.com/problems/n-queens/ "N皇后") | [N皇后](https://leetcode-cn.com/problems/n-queens/ "N皇后") | 困难 | 二维回溯 | [二维回溯](https://ocykj2i631.feishu.cn/docs/doccn4ikGOCGzBlBCF9pLTz0ZvP/ "N皇后") 
+[52](https://leetcode-cn.com/problems/n-queens-ii/ "N皇后 II") | [N皇后 II](https://leetcode-cn.com/problems/n-queens-ii/ "N皇后 II") | 困难 | 二维回溯 | 二维回溯
+
 ## ***三、分治 Divide&Conquer***
 * **分治代码模板：**
 
@@ -192,17 +207,16 @@ private static int divide_conquer(Problem problem, ) {
     return result;
 }
 ```
-* **回溯-实战题目**
+* **分治-实战题目**
 
  题号   |   名称  |  难度  |   分类  |   题解  
 ------ | ------ | ------ | ------- | ------- 
- [169](https://leetcode-cn.com/problems/majority-element/ "N 皇后") | [多数元素](https://leetcode-cn.com/problems/majority-element/ "多数元素") | 简单 | 位运算、分治、数组 | [分治](https://ocykj2i631.feishu.cn/docs/doccnWdPN91dwe9F2ZvOZUgAPwg#/ "多数元素") 
+ [169](https://leetcode-cn.com/problems/majority-element/ "多数元素") | [多数元素](https://leetcode-cn.com/problems/majority-element/ "多数元素") | 简单 | 位运算、分治、数组 | [分治](https://ocykj2i631.feishu.cn/docs/doccnWdPN91dwe9F2ZvOZUgAPwg#/ "多数元素") 
+ 
  
 ## ***四、本周作业***
  题号   |   名称  |  难度  |   分类  |   题解  
 ------ | ------ | ------ | ------- | ------- 
  [236](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/ "二叉树的最近公共祖先") | [二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/ "二叉树的最近公共祖先") | 中等 | 树 | [回溯](https://ocykj2i631.feishu.cn/docs/doccnbB6WmbEoYxbRORbw0GI7Fd#/ "二叉树的最近公共祖先") 
  [105](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ "从前序与中序遍历序列构造二叉树") | [从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/ "从前序与中序遍历序列构造二叉树") | 中等 | 树、DFS、数组 | [回溯](https://ocykj2i631.feishu.cn/docs/doccnbB6WmbEoYxbRORbw0GI7Fd#/ "从前序与中序遍历序列构造二叉树")
- [77](https://leetcode-cn.com/problems/combinations/ "组合") | [组合](https://leetcode-cn.com/problems/combinations/ "组合") | 中等 | 回溯 | [回溯](https://ocykj2i631.feishu.cn/docs/doccnbB6WmbEoYxbRORbw0GI7Fd#/ "组合")
- [46](https://leetcode-cn.com/problems/permutations/ "全排列") | [全排列](https://leetcode-cn.com/problems/permutations/ "全排列") | 中等 | 回溯 | [回溯](https://ocykj2i631.feishu.cn/docs/doccnNW5yuIxQAlVMbqgMeebwwg#/ "全排列")
- [47](https://leetcode-cn.com/problems/permutations-ii/ "全排列 II") | [全排列 II](https://leetcode-cn.com/problems/permutations-ii/ "全排列 II") | 中等 | 回溯 | [回溯](https://ocykj2i631.feishu.cn/docs/doccnbB6WmbEoYxbRORbw0GI7Fd#/ "全排列 II")
+
